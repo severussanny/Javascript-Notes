@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="dom.js" defer> </script> -->
+    <!-- <script src="query_selector.js" defer> </script> -->
+    <!-- <script src="get_set_attri.js" defer> </script> -->
+    <!-- <script src="get_multiple_ele.js" defer> </script> -->
+    <script src="event_delegation_project.js" defer> </script>
+    <title>My website </title>
+</head>
+<body> 
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items">
+                <li class="nav-item"> <a href="#Home">Home</a></li>
+                <li class="nav-item"> <a href="">To Do</a></li>
+                <li class="nav-item"> <a href="">Sign Up </a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2 id="Main-heading">Manage your task <span style="display: none;">Hello</span></h2>
+            <!-- <button class="btn btn-headline" onclick="console.log('hello')">Learn More</button> -->
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+    <section class="section-todo container">
+         <h2>Your Plan for today?</h2>
+
+   <!--             todo form           -->
+         <form action="" class="form-todo">
+            <input type="text" name="" id="" placeholder="Add Todo">
+            <input type="Submit" value="Add " class="btn">
+         </form>
+
+ 
+         <ul class="todo-list">
+            <!-- <li class="first-todo">todo -1</li> -->
+            <!-- li{item $}*5 -->
+             <li>
+                <span class="text"> Do this Do that  </span>
+                <div class="todo_buttons"> 
+                    <button class="todo-btn done">Done</button>
+                    <button  class="todo-btn remove">Remove</button> 
+                </div>
+             </li>
+         </ul>
+    </section>
+    <section class="section-signup container">
+         <h2>Sign Up</h2>
+         <form action="" class="signupForm">
+            <div class="form-group">
+                <label for="username2">Username</label>
+                <input type="text" id="username2" name="username2"> 
+            </div>
+           
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"> 
+            </div>
+           
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword"> 
+            </div>
+           
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone"> 
+            </div>
+           
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"> 
+            </div>
+           
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+           <button type="submit" class="btn signup-btn">Submit</button>
+         </form>
+    </section>
+</body>
+</html>
